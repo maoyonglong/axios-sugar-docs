@@ -1,4 +1,5 @@
 module.exports = {
+  base: '/axios-sugar-docs/',
   locales: {
     '/': {
       lang: 'en-US',
