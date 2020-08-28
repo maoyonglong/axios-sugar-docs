@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>网络状态 | axios-sugar</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="axios.js的二次封装">
+    <link rel="preload" href="/assets/css/0.styles.7950d16d.css" as="style"><link rel="preload" href="/assets/js/app.bf605075.js" as="script"><link rel="preload" href="/assets/js/2.909ae7c3.js" as="script"><link rel="preload" href="/assets/js/19.a382808c.js" as="script"><link rel="prefetch" href="/assets/js/10.0571221a.js"><link rel="prefetch" href="/assets/js/11.ad0524a4.js"><link rel="prefetch" href="/assets/js/12.9ca5061f.js"><link rel="prefetch" href="/assets/js/13.90b71557.js"><link rel="prefetch" href="/assets/js/14.d4a22bbb.js"><link rel="prefetch" href="/assets/js/15.f924a437.js"><link rel="prefetch" href="/assets/js/16.13bf8e93.js"><link rel="prefetch" href="/assets/js/17.39f02601.js"><link rel="prefetch" href="/assets/js/18.76fbad82.js"><link rel="prefetch" href="/assets/js/20.797e32fb.js"><link rel="prefetch" href="/assets/js/21.ef8983ca.js"><link rel="prefetch" href="/assets/js/22.f953862f.js"><link rel="prefetch" href="/assets/js/3.b53b0167.js"><link rel="prefetch" href="/assets/js/4.dbfeec83.js"><link rel="prefetch" href="/assets/js/5.52fbc68d.js"><link rel="prefetch" href="/assets/js/6.373dfa9f.js"><link rel="prefetch" href="/assets/js/7.2005af46.js"><link rel="prefetch" href="/assets/js/8.2aafafc3.js"><link rel="prefetch" href="/assets/js/9.7c8bff92.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7950d16d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/zh/" class="home-link router-link-active"><!----> <span class="site-name">axios-sugar</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/zh/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/zh/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/network.html" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/zh/guide/network.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/maoyonglong/axios-sugar" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/zh/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/zh/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/network.html" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/zh/guide/network.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/maoyonglong/axios-sugar" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/zh/guide/" aria-current="page" class="sidebar-link">开始</a></li><li><a href="/zh/guide/configuration.html" class="sidebar-link">配置</a></li><li><a href="/zh/guide/repeat.html" class="sidebar-link">重复请求</a></li><li><a href="/zh/guide/retry.html" class="sidebar-link">错误重传</a></li><li><a href="/zh/guide/network.html" aria-current="page" class="active sidebar-link">网络状态</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zh/guide/network.html#内置功能" class="sidebar-link">内置功能</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zh/guide/network.html#网络状态的监听" class="sidebar-link">网络状态的监听</a></li><li class="sidebar-sub-header"><a href="/zh/guide/network.html#断网自动重传" class="sidebar-link">断网自动重传</a></li></ul></li><li class="sidebar-sub-header"><a href="/zh/guide/network.html#取消自动重传" class="sidebar-link">取消自动重传</a></li><li class="sidebar-sub-header"><a href="/zh/guide/network.html#自定义处理" class="sidebar-link">自定义处理</a></li></ul></li><li><a href="/zh/guide/save.html" class="sidebar-link">响应存储</a></li><li><a href="/zh/guide/httpstatushandlers.html" class="sidebar-link">HTTP响应状态码处理</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="网络状态"><a href="#网络状态" class="header-anchor">#</a> 网络状态</h1> <p>axios-sugar对错误的HTTP状态码的默认处理就是简单的打印信息和错误重传。<br>
+除此之外，对408超时状态码添加了网络状态的判断和断网重传的功能。</p> <h2 id="内置功能"><a href="#内置功能" class="header-anchor">#</a> 内置功能</h2> <p>默认情况下，网络检测是关闭的，需要配置一下。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  offlineCheck<span class="token operator">:</span> <span class="token punctuation">{</span>
+    enable<span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="网络状态的监听"><a href="#网络状态的监听" class="header-anchor">#</a> 网络状态的监听</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> AxiosSugar <span class="token keyword">from</span> <span class="token string">'axios-sugar'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 请求断网后重新联网时触发</span>
+AxiosSugar<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'online'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> retry</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 联网，但是被不知名原因（非404，因为这在408处理函数中触发）导致超时时触发</span>
+AxiosSugar<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'onlineTimeout'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> retry</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 断网触发</span>
+AxiosSugar<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'offline'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="断网自动重传"><a href="#断网自动重传" class="header-anchor">#</a> 断网自动重传</h3> <p>断网自动重传的配置如下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  onlineCheck<span class="token operator">:</span> <span class="token punctuation">{</span>
+    enable<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    reconnect<span class="token operator">:</span> <span class="token punctuation">{</span>
+      enable<span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  retry<span class="token operator">:</span> <span class="token punctuation">{</span>
+    enable<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    auto<span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>以上所有的<code>enable</code>字段都是必须为true，<code>auto</code>字段也是自动重传必须的。</p> <h2 id="取消自动重传"><a href="#取消自动重传" class="header-anchor">#</a> 取消自动重传</h2> <p>有时，可能需要对个别特定的错误，比如4<code>onlineTimeout</code>进行更加细致的处理，需要取消自动重传的功能。</p> <div class="language-js extra-class"><pre class="language-js"><code>AxiosSugar<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'onlineTimeout'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> retry</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 如果retry.auto设置为true，那么408相关错误都会自动重传</span>
+  <span class="token comment">// 如果希望onlineTimeout错误不自动重传，其它错误照旧自动重传，</span>
+  <span class="token comment">// 可以调用以下函数</span>
+  AxiosSugar<span class="token punctuation">.</span><span class="token function">cancelAutoRetry</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'未知错误导致请求超时！'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="自定义处理"><a href="#自定义处理" class="header-anchor">#</a> 自定义处理</h2> <p>以上功能都定义在httpStatusProcessor原型的<code>onTimeout</code>方法中。<br>
+如果需要对408状态码的处理，可以通过覆写该方法实现。</p> <div class="language-js extra-class"><pre class="language-js"><code>AxiosSugar<span class="token punctuation">.</span>httpStatusProcessor<span class="token punctuation">.</span><span class="token function-variable function">onTimeout</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>
+  <span class="token parameter">status<span class="token punctuation">,</span> err<span class="token punctuation">,</span> result<span class="token punctuation">,</span> retry</span>
+<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 不能使用this.prototype.onTimeout来获取原来在原型上的onTimeout</span>
+  <span class="token comment">// 因为所有处理函数的this被重置指向了AxiosSugar实例。</span>
+  <span class="token keyword">const</span> originOnTimeout <span class="token operator">=</span> AxiosSugar<span class="token punctuation">.</span>httpStatusProcessor<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>onTimeout<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><div class="custom-block warning"><p class="custom-block-title">注意</p> <p>覆写了onTimeout不使用原来的onTimeout方法，会导致本章介绍的功能不可用。</p></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/zh/guide/retry.html" class="prev">
+        错误重传
+      </a></span> <span class="next"><a href="/zh/guide/save.html">
+        响应存储
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.bf605075.js" defer></script><script src="/assets/js/2.909ae7c3.js" defer></script><script src="/assets/js/19.a382808c.js" defer></script>
+  </body>
+</html>
