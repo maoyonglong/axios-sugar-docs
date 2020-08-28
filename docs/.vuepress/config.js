@@ -23,7 +23,7 @@ module.exports = {
         nav: [
           { text: 'Home', link: '/' },
           { text: 'Guide', link: '/guide/' },
-          { text: 'API', link: '/api/' }
+          // { text: 'API', link: '/api/' }
         ],
         sidebar: {
           '/guide/': [
@@ -47,7 +47,7 @@ module.exports = {
         nav: [
           { text: '首页', link: '/zh/' },
           { text: '指南', link: '/zh/guide/' },
-          { text: 'API', link: '/zh/api/' }
+          // { text: 'API', link: '/zh/api/' }
         ],
         sidebar: {
           '/zh/guide/': [

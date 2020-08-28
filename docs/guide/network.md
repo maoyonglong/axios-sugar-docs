@@ -61,7 +61,7 @@ AxiosSugar.on('onlineTimeout', function (err, retry) {
 });
 ```
 
-## 自定义处理
+## Custom processing
 The above functions are defined in the `ontimeout` method of the httpstatusprocessor prototype.
 
 If the 408 status code needs to be processed, it can be realized by rewriting this method.

@@ -5,7 +5,7 @@ Error retransmission and network state processing depend on it.
 :::
 
 ## Processing flow
-![http_status_process.png](../../assets/http_status_process.png)  
+![http_status_process.png](../assets/http_status_process.png)  
 The onStatusHander represents the processing function called for each status
 | status code | function |
 | --- | --- |

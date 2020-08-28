@@ -41,8 +41,8 @@ AxiosSugar.httpStatusProcessor.setStatusHandler('200', function (
 ```
 :::
 
-## 重传次数
-默认只会尝试重传3次，可以通过count字段来设置。
+## Retransmission times
+By default, only three retransmissions are attempted, which can be set through the count field.
 ```js
 {
   retry: {
@@ -67,7 +67,7 @@ AxiosSugar.on('retryFailed', function (err) {
 });
 ```
 
-## 手动重传
+## Manual retransmission
 Manual retransmission needs to be implemented with the help of [HTTP response status code processor] (/ guide/httpstatushandlers).
 ```js
 import AxiosSugar from 'axios-sugar';
