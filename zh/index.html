@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>axios-sugar</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="axios.js的二次封装">
+    <link rel="preload" href="/assets/css/0.styles.7950d16d.css" as="style"><link rel="preload" href="/assets/js/app.bf605075.js" as="script"><link rel="preload" href="/assets/js/2.909ae7c3.js" as="script"><link rel="preload" href="/assets/js/15.f924a437.js" as="script"><link rel="prefetch" href="/assets/js/10.0571221a.js"><link rel="prefetch" href="/assets/js/11.ad0524a4.js"><link rel="prefetch" href="/assets/js/12.9ca5061f.js"><link rel="prefetch" href="/assets/js/13.90b71557.js"><link rel="prefetch" href="/assets/js/14.d4a22bbb.js"><link rel="prefetch" href="/assets/js/16.13bf8e93.js"><link rel="prefetch" href="/assets/js/17.39f02601.js"><link rel="prefetch" href="/assets/js/18.76fbad82.js"><link rel="prefetch" href="/assets/js/19.a382808c.js"><link rel="prefetch" href="/assets/js/20.797e32fb.js"><link rel="prefetch" href="/assets/js/21.ef8983ca.js"><link rel="prefetch" href="/assets/js/22.f953862f.js"><link rel="prefetch" href="/assets/js/3.b53b0167.js"><link rel="prefetch" href="/assets/js/4.dbfeec83.js"><link rel="prefetch" href="/assets/js/5.52fbc68d.js"><link rel="prefetch" href="/assets/js/6.373dfa9f.js"><link rel="prefetch" href="/assets/js/7.2005af46.js"><link rel="prefetch" href="/assets/js/8.2aafafc3.js"><link rel="prefetch" href="/assets/js/9.7c8bff92.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7950d16d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/zh/" aria-current="page" class="home-link router-link-exact-active router-link-active"><!----> <span class="site-name">axios-sugar</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/zh/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  首页
+</a></div><div class="nav-item"><a href="/zh/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/zh/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/maoyonglong/axios-sugar" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/zh/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  首页
+</a></div><div class="nav-item"><a href="/zh/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/zh/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/maoyonglong/axios-sugar" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <!----> </aside> <main aria-labelledby="main-title" class="home"><header class="hero"><!----> <h1 id="main-title">
+      Axios-Sugar
+    </h1> <p class="description">
+      Axios的二次封装库
+    </p> <p class="action"><a href="/zh/guide/" class="nav-link action-button">
+  快速上手 →
+</a></p></header> <div class="features"><div class="feature"><h2>类Axios用法</h2> <p>尽量保证和axios.js的用法保持一致，简单易用。</p></div><div class="feature"><h2>开箱即用</h2> <p>所有特性只要简单的配置即可使用。</p></div><div class="feature"><h2>定制化</h2> <p>通过回调函数实现一定程度上的逻辑自由。</p></div></div> <div class="theme-default-content custom content__default"><h3 id="用法和axios相似"><a href="#用法和axios相似" class="header-anchor">#</a> 用法和axios相似</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> AxiosSugar <span class="token keyword">from</span> <span class="token string">'axios-sugar'</span><span class="token punctuation">;</span>
+
+AxiosSugar<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/path/to/sevice'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  params<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**/</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  retry<span class="token operator">:</span> <span class="token punctuation">{</span>
+    enable<span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token parameter">err</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">.</span>reason<span class="token punctuation">.</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 所有错误被放到了reason</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">提示</p> <p>它和axios.js的相似点大致是：</p> <ol><li>AxiosSugar和axios</li> <li>AxiosSugar.create和axios.create</li> <li>AxiosSugar.defaults和axios.defaults</li> <li>AxiosSugar.isCancel和axios.isCancel</li> <li>request, get, post, delete一系列发送请求的方法</li> <li>拦截器AxiosSugar.interceptors</li></ol> <div class="custom-block warning"><p class="custom-block-title">注意</p> <p>它们并非完全等价的，仅仅只是用法相似。</p></div></div> <h3 id="支持的特性"><a href="#支持的特性" class="header-anchor">#</a> 支持的特性</h3> <ul><li>取消重复请求</li> <li>重试</li> <li>响应存储器</li> <li>断网重传</li> <li>Http状态代码响应的处理程序</li> <li>取消筛选器匹配的所有请求</li></ul> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>更多详情请看<a href="/zh/guide/">指南</a></p></div></div> <div class="footer">
+    MIT Licensed | Copyright © 2020 maoyonglong
+  </div></main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.bf605075.js" defer></script><script src="/assets/js/2.909ae7c3.js" defer></script><script src="/assets/js/15.f924a437.js" defer></script>
+  </body>
+</html>
