@@ -22,7 +22,7 @@ import AxiosSugar from 'axios-sugar';
 ```
 ### Script
 
-insert [Axios-sugar.js]() or [Axios-sugar.bundle.js]() by using `<script>` tag
+insert [axios-sugar.js](https://github.com/maoyonglong/axios-sugar/blob/master/dist/axios-sugar.js) or [axios-sugar.bundle.js](https://github.com/maoyonglong/axios-sugar/blob/master/dist/axios-sugar.bundle.js) by using `<script>` tag
 
 ```html
 <script src="/path/to/axios-sugar.js "></script>

@@ -18,7 +18,7 @@ import AxiosSugar from 'axios-sugar';
 ```
 
 ### Script
-标签引入[axios-sugar.js]()或者[axios-sugar.bundle.js]()
+标签引入[axios-sugar.js](https://github.com/maoyonglong/axios-sugar/blob/master/dist/axios-sugar.js)或者[axios-sugar.bundle.js](https://github.com/maoyonglong/axios-sugar/blob/master/dist/axios-sugar.bundle.js) 
 ```html
 <script src="/path/to/axios-sugar.js"></script>
 <!-- or -->
