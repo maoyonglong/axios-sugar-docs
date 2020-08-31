@@ -1,4 +1,4 @@
-# HTTP response status code processing
+# HTTP Response Status Code Processing
 This can be said to be one of the core parts of Axios sugar, and many functions depend on it.
 ::: tip
 Error retransmission and network state processing depend on it.

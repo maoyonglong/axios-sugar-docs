@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cancel Requests | axios-sugar</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="A wrapper for axios.js">
+    <link rel="preload" href="/axios-sugar-docs/assets/css/0.styles.be0819b1.css" as="style"><link rel="preload" href="/axios-sugar-docs/assets/js/app.1f2d0d2f.js" as="script"><link rel="preload" href="/axios-sugar-docs/assets/js/2.909ae7c3.js" as="script"><link rel="preload" href="/axios-sugar-docs/assets/js/10.3cf07c23.js" as="script"><link rel="prefetch" href="/axios-sugar-docs/assets/js/11.56718570.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/12.4b8e79e4.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/13.6d3f4bee.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/14.8ca3faec.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/15.ad3c8935.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/16.33844c4a.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/17.1db175c4.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/18.9d84023e.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/19.624fc1dd.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/20.82a055a4.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/21.cb7bb335.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/22.526caf86.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/23.9caa6e30.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/24.9a2ba6b2.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/25.6da1a825.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/26.61f035d5.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/3.1f7c5f47.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/4.55ed2385.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/5.753ed91a.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/6.373dfa9f.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/7.2d2cdb5b.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/8.c2cf471e.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/9.004fef91.js">
+    <link rel="stylesheet" href="/axios-sugar-docs/assets/css/0.styles.be0819b1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/axios-sugar-docs/" class="home-link router-link-active"><!----> <span class="site-name">axios-sugar</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/axios-sugar-docs/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/axios-sugar-docs/guide/" class="nav-link router-link-active">
+  Guide
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/axios-sugar-docs/guide/cancel.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/axios-sugar-docs/zh/guide/cancel.html" class="nav-link">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/maoyonglong/axios-sugar" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/axios-sugar-docs/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/axios-sugar-docs/guide/" class="nav-link router-link-active">
+  Guide
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/axios-sugar-docs/guide/cancel.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/axios-sugar-docs/zh/guide/cancel.html" class="nav-link">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/maoyonglong/axios-sugar" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/axios-sugar-docs/guide/" aria-current="page" class="sidebar-link">beginning</a></li><li><a href="/axios-sugar-docs/guide/configuration.html" class="sidebar-link">Configuration</a></li><li><a href="/axios-sugar-docs/guide/repeat.html" class="sidebar-link">repeated request</a></li><li><a href="/axios-sugar-docs/guide/retry.html" class="sidebar-link">Error Retransmission</a></li><li><a href="/axios-sugar-docs/guide/network.html" class="sidebar-link">network status</a></li><li><a href="/axios-sugar-docs/guide/save.html" class="sidebar-link">response storage</a></li><li><a href="/axios-sugar-docs/guide/httpstatushandlers.html" class="sidebar-link">handlers for HTTP Response Status</a></li><li><a href="/axios-sugar-docs/guide/cancel.html" aria-current="page" class="active sidebar-link">Cancel Requests</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/axios-sugar-docs/guide/cancel.html#cancel-page-requests" class="sidebar-link">Cancel Page Requests</a></li><li class="sidebar-sub-header"><a href="/axios-sugar-docs/guide/cancel.html#make-the-request-non-cancellable" class="sidebar-link">Make the request non cancellable</a></li><li class="sidebar-sub-header"><a href="/axios-sugar-docs/guide/cancel.html#cancelfilter" class="sidebar-link">cancelFilter</a></li></ul></li><li><a href="/axios-sugar-docs/guide/concurrency.html" class="sidebar-link">Concurrency</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="cancel-requests"><a href="#cancel-requests" class="header-anchor">#</a> Cancel Requests</h1> <p>This chapter deals with the cancellation of page requests. axios-sugar cancels all outstanding requests on the page through a function called <code>cancelAll</code>.</p> <h2 id="cancel-page-requests"><a href="#cancel-page-requests" class="header-anchor">#</a> Cancel Page Requests</h2> <p>When you jump to a page, you often want to cancel all unfinished page requests, so you can use cancel all to cancel.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> AxiosSugar <span class="token keyword">from</span> <span class="token string">'axios-sugar'</span><span class="token punctuation">;</span>
+
+AxiosSugar<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/r1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+AxiosSugar<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/r2'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Suppose neither R1 nor R2 requests have been completed</span>
+AxiosSugar<span class="token punctuation">.</span><span class="token function">cancelAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="make-the-request-non-cancellable"><a href="#make-the-request-non-cancellable" class="header-anchor">#</a> Make the request non cancellable</h2> <p>Although it is a common scenario to cancel all page requests during page Jump, sometimes some requests may not want to be cancelled (such as heartbeat sending).</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> AxiosSugar <span class="token keyword">from</span> <span class="token string">'axios-sugar'</span><span class="token punctuation">;</span>
+
+AxiosSugar<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/r1'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  cancelDisabled<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">// Cancelall cannot cancel this request</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="cancelfilter"><a href="#cancelfilter" class="header-anchor">#</a> cancelFilter</h2> <p>The <code>cancelDisabled</code> function mentioned above filters out non cancelable requests through a function called <code>cancelFilter</code>, and then cancels all the remaining requests.</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">interface</span> <span class="token class-name">MiddleRequestConfig</span> <span class="token punctuation">{</span>
+  axios<span class="token operator">:</span> AxiosRequestConfig<span class="token punctuation">;</span>
+  sugar<span class="token operator">:</span> AxiosSugarConfig<span class="token punctuation">;</span>
+  index<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+  count<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+  sendingTime<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+  cacheTime<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+  completeTime<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">interface</span> <span class="token class-name">CancelConfig</span> <span class="token punctuation">{</span>
+  cancel<span class="token operator">:</span> <span class="token builtin">Function</span><span class="token punctuation">;</span>
+  config<span class="token operator">:</span> MiddleRequestConfig<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">cancelFilter</span> <span class="token punctuation">(</span>cancelConfigs<span class="token operator">:</span> <span class="token builtin">Array</span><span class="token operator">&lt;</span>CancelConfig<span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Array</span><span class="token operator">&lt;</span>CancelConfig<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> cancelConfigs<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token operator">!</span>c<span class="token punctuation">.</span>config<span class="token punctuation">.</span>sugar<span class="token punctuation">.</span>cancelDisabled<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>The above code is the default <code>cancelfilter</code>, which is defined on <code>AxiosSugar</code> instead of its instance. It should return requests that can be cancelled, which will be cancelled after the <code>cancelAll</code> call.</p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>By rewriting<code>AxiosSugar.cancelFilter</code>, you can customize the filtering rules for cancellation requests.</p></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/axios-sugar-docs/guide/httpstatushandlers.html" class="prev">
+        handlers for HTTP Response Status
+      </a></span> <span class="next"><a href="/axios-sugar-docs/guide/concurrency.html">
+        Concurrency
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/axios-sugar-docs/assets/js/app.1f2d0d2f.js" defer></script><script src="/axios-sugar-docs/assets/js/2.909ae7c3.js" defer></script><script src="/axios-sugar-docs/assets/js/10.3cf07c23.js" defer></script>
+  </body>
+</html>

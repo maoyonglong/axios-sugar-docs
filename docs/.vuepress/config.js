@@ -34,7 +34,9 @@ module.exports = {
             'retry',
             ['network', 'network status'],
             ['save', 'response storage'],
-            ['httpstatushandlers', 'handlers for HTTP Response Status']
+            ['httpstatushandlers', 'handlers for HTTP Response Status'],
+            'cancel',
+            'concurrency'
           ],
           // '/api/': {
           //   sidebar: 'auto'
@@ -58,7 +60,9 @@ module.exports = {
             ['retry', '错误重传'],
             ['network', '网络状态'],
             ['save', '响应存储'],
-            ['httpstatushandlers', 'HTTP响应状态码处理']
+            ['httpstatushandlers', 'HTTP响应状态码处理'],
+            ['cancel', '取消'],
+            ['concurrency', '并发']
           ],
           // '/zh/api/': {
           //   sidebar: 'auto'

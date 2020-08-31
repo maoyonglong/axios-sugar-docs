@@ -1,4 +1,4 @@
-# Repeated request
+# Repeated Request
 
 Unlike other configuration items, there is no enable option for `repeat`, which means it is always on.
 

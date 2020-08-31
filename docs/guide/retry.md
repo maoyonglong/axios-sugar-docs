@@ -1,4 +1,4 @@
-# Error retransmission
+# Error Retransmission
 Error retransmission is to resend a request that returns an HTTP response code that represents an error. For general errors (e.g. common Promise.reject）Not to be dealt with.
 
 ## Automatic retransmission

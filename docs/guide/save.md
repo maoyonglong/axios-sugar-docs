@@ -1,4 +1,4 @@
-# Response storage
+# Response Storage
 axios-sugar provides two storage methods, one is memory storage (default), the other is local storage storage.
 
 ## Usage
