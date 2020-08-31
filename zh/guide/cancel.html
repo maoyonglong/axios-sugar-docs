@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>取消请求 | axios-sugar</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="axios.js的二次封装">
+    <link rel="preload" href="/axios-sugar-docs/assets/css/0.styles.be0819b1.css" as="style"><link rel="preload" href="/axios-sugar-docs/assets/js/app.1f2d0d2f.js" as="script"><link rel="preload" href="/axios-sugar-docs/assets/js/2.909ae7c3.js" as="script"><link rel="preload" href="/axios-sugar-docs/assets/js/20.82a055a4.js" as="script"><link rel="prefetch" href="/axios-sugar-docs/assets/js/10.3cf07c23.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/11.56718570.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/12.4b8e79e4.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/13.6d3f4bee.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/14.8ca3faec.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/15.ad3c8935.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/16.33844c4a.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/17.1db175c4.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/18.9d84023e.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/19.624fc1dd.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/21.cb7bb335.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/22.526caf86.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/23.9caa6e30.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/24.9a2ba6b2.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/25.6da1a825.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/26.61f035d5.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/3.1f7c5f47.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/4.55ed2385.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/5.753ed91a.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/6.373dfa9f.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/7.2d2cdb5b.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/8.c2cf471e.js"><link rel="prefetch" href="/axios-sugar-docs/assets/js/9.004fef91.js">
+    <link rel="stylesheet" href="/axios-sugar-docs/assets/css/0.styles.be0819b1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/axios-sugar-docs/zh/" class="home-link router-link-active"><!----> <span class="site-name">axios-sugar</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/axios-sugar-docs/zh/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/axios-sugar-docs/zh/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/axios-sugar-docs/guide/cancel.html" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/axios-sugar-docs/zh/guide/cancel.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/maoyonglong/axios-sugar" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/axios-sugar-docs/zh/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/axios-sugar-docs/zh/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/axios-sugar-docs/guide/cancel.html" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/axios-sugar-docs/zh/guide/cancel.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/maoyonglong/axios-sugar" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/axios-sugar-docs/zh/guide/" aria-current="page" class="sidebar-link">开始</a></li><li><a href="/axios-sugar-docs/zh/guide/configuration.html" class="sidebar-link">配置</a></li><li><a href="/axios-sugar-docs/zh/guide/repeat.html" class="sidebar-link">重复请求</a></li><li><a href="/axios-sugar-docs/zh/guide/retry.html" class="sidebar-link">错误重传</a></li><li><a href="/axios-sugar-docs/zh/guide/network.html" class="sidebar-link">网络状态</a></li><li><a href="/axios-sugar-docs/zh/guide/save.html" class="sidebar-link">响应存储</a></li><li><a href="/axios-sugar-docs/zh/guide/httpstatushandlers.html" class="sidebar-link">HTTP响应状态码处理</a></li><li><a href="/axios-sugar-docs/zh/guide/cancel.html" aria-current="page" class="active sidebar-link">取消</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/axios-sugar-docs/zh/guide/cancel.html#取消页面请求" class="sidebar-link">取消页面请求</a></li><li class="sidebar-sub-header"><a href="/axios-sugar-docs/zh/guide/cancel.html#让请求不可取消" class="sidebar-link">让请求不可取消</a></li><li class="sidebar-sub-header"><a href="/axios-sugar-docs/zh/guide/cancel.html#请求取消过滤器" class="sidebar-link">请求取消过滤器</a></li></ul></li><li><a href="/axios-sugar-docs/zh/guide/concurrency.html" class="sidebar-link">并发</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="取消请求"><a href="#取消请求" class="header-anchor">#</a> 取消请求</h1> <p>本章内容涉及页面请求的取消。axios-sugar通过一个叫做<code>cancelAll</code>的函数取消页面上所有没有完成的请求。</p> <h2 id="取消页面请求"><a href="#取消页面请求" class="header-anchor">#</a> 取消页面请求</h2> <p>在跳转页面时，常常会希望取消所有没有完成的页面请求，就可以使用cancelAll取消。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> AxiosSugar <span class="token keyword">from</span> <span class="token string">'axios-sugar'</span><span class="token punctuation">;</span>
+
+AxiosSugar<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/r1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+AxiosSugar<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/r2'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 假设r1和r2请求都没有完成</span>
+AxiosSugar<span class="token punctuation">.</span><span class="token function">cancelAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="让请求不可取消"><a href="#让请求不可取消" class="header-anchor">#</a> 让请求不可取消</h2> <p>虽然在页面跳转时取消所有页面请求是常用场景，但是有时候有些请求可能不希望被取消（比如心跳发送等）。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> AxiosSugar <span class="token keyword">from</span> <span class="token string">'axios-sugar'</span><span class="token punctuation">;</span>
+
+AxiosSugar<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/r1'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  cancelDisabled<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">// cancelAll不能取消该请求</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="请求取消过滤器"><a href="#请求取消过滤器" class="header-anchor">#</a> 请求取消过滤器</h2> <p>上面说的<code>cancelDisabled</code>功能是通过一个叫<code>cancelFilter</code>的函数过滤掉不可取消请求，然后将剩下的请求全部取消实现的。</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">interface</span> <span class="token class-name">MiddleRequestConfig</span> <span class="token punctuation">{</span>
+  axios<span class="token operator">:</span> AxiosRequestConfig<span class="token punctuation">;</span>
+  sugar<span class="token operator">:</span> AxiosSugarConfig<span class="token punctuation">;</span>
+  index<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+  count<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+  sendingTime<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+  cacheTime<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+  completeTime<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">interface</span> <span class="token class-name">CancelConfig</span> <span class="token punctuation">{</span>
+  cancel<span class="token operator">:</span> <span class="token builtin">Function</span><span class="token punctuation">;</span>
+  config<span class="token operator">:</span> MiddleRequestConfig<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">cancelFilter</span> <span class="token punctuation">(</span>cancelConfigs<span class="token operator">:</span> <span class="token builtin">Array</span><span class="token operator">&lt;</span>CancelConfig<span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Array</span><span class="token operator">&lt;</span>CancelConfig<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> cancelConfigs<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token operator">!</span>c<span class="token punctuation">.</span>config<span class="token punctuation">.</span>sugar<span class="token punctuation">.</span>cancelDisabled<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>上面的代码就是默认的<code>cancelFilter</code>，它定义在<code>AxiosSugar</code>而不是它的实例上。它应该返回可以被取消的请求，这些请求会在<code>cancelAll</code>调用后被取消。</p> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>通过覆写<code>AxiosSugar.cancelFilter</code>可以自定义取消请求的过滤规则。</p></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/axios-sugar-docs/zh/guide/httpstatushandlers.html" class="prev">
+        HTTP响应状态码处理
+      </a></span> <span class="next"><a href="/axios-sugar-docs/zh/guide/concurrency.html">
+        并发
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/axios-sugar-docs/assets/js/app.1f2d0d2f.js" defer></script><script src="/axios-sugar-docs/assets/js/2.909ae7c3.js" defer></script><script src="/axios-sugar-docs/assets/js/20.82a055a4.js" defer></script>
+  </body>
+</html>
